@@ -1,0 +1,33 @@
+.feedBack {
+    background-color: rgba(22, 28, 40, 1);
+    padding: 70px 0;
+}
+
+.feedBack img {
+    margin-right: 10px;
+}
+
+.feedBack form {
+    background-color: rgba(34, 41, 56, 1);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 576px) {
+
+    .feedBack {
+        background-color: rgba(22, 28, 40, 1);
+        padding: 40px 0;
+    }
+
+
+    .feedBack form {
+        width: 95% !important;
+        margin-top: 25px !important;
+    }
+
+    .feedBack .clientsWrapper {
+        text-align: center;
+    }
+}

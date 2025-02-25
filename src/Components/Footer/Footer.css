@@ -1,0 +1,52 @@
+footer {
+    background-color: rgba(22, 28, 40, 1);
+    color: rgba(166, 166, 166, 1);
+    padding: 70px 0 20px 0;
+}
+
+footer input {
+    border: 1px solid rgba(166, 166, 166, 1);
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 8px;
+    width: 100%;
+}
+
+footer .fa-arrow-right {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(84, 189, 149, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 576px) {
+
+    footer ul.ps-5 {
+        padding: 0 !important;
+        margin: 25px 0 !important;
+    }
+
+    footer ul.ps-4 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+
+    footer .privacy {
+        flex-direction: column;
+    }
+
+}

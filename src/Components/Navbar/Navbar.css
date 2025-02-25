@@ -1,0 +1,19 @@
+.nav-link {
+    padding: 6px 15px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link.active-link {
+    /* background-color: rgba(229, 57, 70, 1); */
+    /* Change this to any color */
+    border-radius: 5px;
+    color: white !important;
+    font-weight: 800;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: rgba(148, 144, 144, 0.7);
+
+}

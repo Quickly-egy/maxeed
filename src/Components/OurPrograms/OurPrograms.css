@@ -1,0 +1,40 @@
+.ourPrograms {
+    padding: 70px 0;
+}
+
+.ourPrograms .imgWrapper .transparentOverlay {
+
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1250px !important;
+}
+
+.ourPrograms .col-lg-4 small {
+    width: fit-content;
+}
+
+@media (max-width: 576px) {
+
+    .ourPrograms {
+        padding: 70px 0;
+    }
+
+
+    .ourPrograms .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}

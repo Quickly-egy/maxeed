@@ -1,0 +1,11 @@
+header.home_header {
+    background-image: url('../../../public//assets//imgs//image.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.281);
+    background-blend-mode: overlay;
+    color: white;
+    padding: 70px 0;
+
+}

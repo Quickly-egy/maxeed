@@ -1,0 +1,123 @@
+.aboutUs header {
+    background-image: url('../../../public//assets/imgs/Rectangle\ 161.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+
+.aboutUs header h1 {
+    border-bottom: 2px solid white;
+}
+
+
+
+.aboutUs .exporting {
+    padding: 70px 0;
+}
+
+.aboutUs .imgWrapper::after {
+    content: '';
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 114px;
+    top: -42px;
+    right: 0;
+    bottom: 1px;
+    z-index: 1;
+    border: 2px solid rgba(96, 213, 66, 1);
+    border-radius: 50%;
+}
+
+.aboutUs .imgWrapper::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 25px;
+    bottom: 1px;
+    z-index: 55;
+    background-color: rgba(96, 213, 66, 1);
+    border-radius: 50%;
+    right: 57px;
+}
+
+
+.aboutUs .exporting h1,
+.aboutUs .exporting p {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+
+}
+
+.aboutUs .exporting p {
+
+    line-height: 35px;
+    font-size: 18px;
+    margin: 35px 0;
+}
+
+.aboutUs .btnBox button:first-child {
+    background-color: rgba(96, 213, 66, 1) !important;
+
+}
+
+.aboutUs .btnBox button:last-child {
+    border: 1px solid rgba(96, 213, 66, 1);
+}
+
+.aboutUs .whyChooseUs h1 {
+    font-size: 65px;
+}
+
+.aboutUs .whyChooseUs .iconWrapper img {
+    background-color: rgba(96, 213, 66, 1);
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.aboutUs div.footer h1,
+.aboutUs div.footer h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+
+
+    .aboutUs .exporting {
+        padding: 40px 0;
+    }
+
+    .aboutUs div.imgWrapper img {
+        width: 75% !important;
+        margin: 80px auto !important;
+        display: block;
+
+    }
+
+
+    .aboutUs .imgWrapper::after {
+        width: 69%;
+        height: 93%;
+        left: 92px;
+        top: -19px;
+
+    }
+
+    .aboutUs .imgWrapper::before {
+
+        top: 2%;
+        right: 4%;
+
+
+    }
+
+}

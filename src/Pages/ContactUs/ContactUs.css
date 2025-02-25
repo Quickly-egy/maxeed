@@ -1,0 +1,129 @@
+/* تحسين استجابة النموذج */
+.contactUs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.contactUs .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contactUs form {
+    padding: 50px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contactUs form button {
+    background-color: rgba(96, 213, 66, 1);
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactUs form button:hover {
+    background-color: rgba(76, 183, 56, 1);
+}
+
+.contactUs .map {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.contactUs .map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contactUs .socialBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contactUs .socialBox div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactUs .socialBox img {
+    height: 24px;
+}
+
+.contactUs .socialBox span {
+    color: rgba(96, 213, 66, 1);
+    font-size: 14px;
+}
+
+.contactUs h6 {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* تحسينات على الشاشات الصغيرة */
+@media (max-width: 576px) {
+    .contactUs .socialBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactUs .map {
+        height: 500px;
+        top: 32px;
+        position: absolute;
+        padding: 20px;
+
+
+    }
+
+    .contactUs form {
+        padding: 30px 15px;
+    }
+
+    .contactUs div.w-75 {
+        width: 100% !important;
+    }
+
+    .contactUs .position-relative {
+        padding: 0px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 769px) {
+    .contactUs .map {
+        height: 300px;
+    }
+
+    .contactUs form {
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 992px) {
+    .contactUs .map {
+        height: 350px;
+    }
+}
