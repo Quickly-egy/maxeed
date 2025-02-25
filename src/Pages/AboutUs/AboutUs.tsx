@@ -94,7 +94,7 @@ const AboutUs = () => {
 
                                     {
                                         arrayOfArticles.map((item, idx) => {
-                                            return <article className='iconWrapper d-flex align-items-center mb-5'>
+                                            return <article key={idx} className='iconWrapper d-flex align-items-center mb-5'>
                                                 <div>
                                                     <img className='me-3 rounded-4' src={item.imgUrl} alt="" />
 

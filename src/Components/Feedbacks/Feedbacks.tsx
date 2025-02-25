@@ -1,4 +1,3 @@
-import React from 'react'
 import './Feedbacks.css'
 
 const Feedbacks = () => {
