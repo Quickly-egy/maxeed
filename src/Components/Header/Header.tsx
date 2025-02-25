@@ -20,7 +20,11 @@ const Header = () => {
                             </h6>
 
                             <div className='d-flex align-items-center'>
-                                <button className='btn btn-dark px-4 me-4'>
+                                <button className='btn btn-dark px-4 me-4'
+                                    style={{
+                                        padding: ' 14px 28px'
+                                    }}
+                                >
                                     <Link
                                         className='text-white text-decoration-none'
                                         to={'/products'}>

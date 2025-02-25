@@ -3,14 +3,29 @@
     padding: 70px 0;
 }
 
+.feedBack h1 {
+    font-size: 52px;
+}
+
 .feedBack img {
     margin-right: 10px;
 }
 
 .feedBack form {
     background-color: rgba(34, 41, 56, 1);
-    padding: 35px;
+    padding: 35px 55px;
     border-radius: 20px;
+}
+
+.feedBack label {
+    margin-bottom: 8px;
+}
+
+.feedBack .btn-primary {
+    background-color: rgba(84, 189, 149, 1) !important;
+    border: none !important;
+    font-size: 14px !important;
+    padding: 15px 0;
 }
 
 

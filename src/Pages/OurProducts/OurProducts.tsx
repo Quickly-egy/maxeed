@@ -15,6 +15,7 @@ const OurProducts = () => {
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
             type: 'frozen',
+
         },
         {
             id: 200,
@@ -200,6 +201,9 @@ const OurProducts = () => {
 
     }
 
+    const [openIndex, setOpenIndex] = useState(null);
+
+
 
     return (
         <>
@@ -266,7 +270,7 @@ const OurProducts = () => {
 
                         {
 
-                            filterdItems.map((prod, idx) => {
+                            filterdItems.map((prod, idx: any) => {
                                 return <div key={idx} className='col-lg-4 mb-4 '>
                                     <div className='position-relative '>
                                         <div
@@ -286,15 +290,36 @@ const OurProducts = () => {
                                                 <p className='mt-0'>Agricultural products</p>
                                             </div>
 
+                                            {/* <small className='text-center d-block text-white'>
+                                                {prod.desc}
+                                            </small> */}
+
                                             <a className='text-white text-decoration-none d-flex align-items-center'
                                                 style={{
                                                     paddingLeft: '30px'
                                                 }}
-                                                href='#'>
+                                                href='#'
+                                                onClick={(e) => {
+                                                    e.preventDefault(); // منع إعادة تحميل الصفحة
+                                                    setOpenIndex(idx); // فتح التفاصيل للمنتج الحالي
+                                                }}
+                                            >
                                                 Read More
                                                 <i className="fa-solid fa-arrow-right ms-2"></i>
                                             </a>
                                         </div>
+
+                                        {openIndex === idx && (
+                                            <div className="product-details">
+                                                <div className="details-content p-3">
+                                                    <h5>{prod.title}</h5>
+                                                    <p>{prod.desc}</p>
+                                                    <button className="btn text-white text-decoration-underline" onClick={() => setOpenIndex(null)}>
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
 
                                     </div>
                                 </div>

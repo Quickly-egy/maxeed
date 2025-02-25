@@ -2,6 +2,14 @@
     padding: 70px 0;
 }
 
+.ourPrograms h1 {
+    font-weight: 800;
+}
+
+.ourPrograms h2 {
+    font-weight: 700;
+}
+
 .ourPrograms .imgWrapper .transparentOverlay {
 
     background-color: transparent;

@@ -1,10 +1,24 @@
 /* تحسين استجابة النموذج */
 .contactUs {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 0px 0px 50px 20px;
+
+}
+
+.contactUs h1 {
+    font-weight: bold;
+}
+
+
+.contactUs p {
+    font-weight: 600;
+}
+
+.contactUs h1 span {
+    color: rgba(96, 213, 66, 1);
 }
 
 .contactUs .container {
@@ -16,7 +30,7 @@
     padding: 50px 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -38,12 +52,15 @@
 }
 
 .contactUs .map {
-    position: relative;
-    width: 100%;
-    height: 350px;
+    position: absolute;
+    width: 120%;
+    height: 500px;
     margin-top: 30px;
     overflow: hidden;
+    top: 65px;
+    left: -148px;
 }
+
 
 .contactUs .map iframe {
     width: 100%;

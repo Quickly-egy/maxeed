@@ -11,7 +11,7 @@ const ContactUs = () => {
                         <div className="col-lg-9">
                             <div className='w-75'>
                                 <form>
-                                    <h1>Get in Touch</h1>
+                                    <h1>Get in <span> Touch </span> </h1>
                                     <p>Have questions or need more details? Get in touch with us for inquiries, partnerships, or orders. Our team is ready to assist you with premium agricultural exports and reliable service.</p>
 
                                     <input type="text"

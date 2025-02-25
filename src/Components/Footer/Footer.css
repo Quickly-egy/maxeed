@@ -31,6 +31,15 @@ footer ul li {
 }
 
 
+footer a {
+    color: rgba(166, 166, 166, 1);
+}
+
+footer input {
+    color: white;
+}
+
+
 
 @media (max-width: 576px) {
 

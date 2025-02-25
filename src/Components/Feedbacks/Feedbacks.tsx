@@ -45,7 +45,7 @@ const Feedbacks = () => {
                             <div>
                                 <form className='text-white w-75 m-auto'>
 
-                                    <img className='d-block m-auto' src="/assets/imgs/db.svg" alt="" />
+                                    <img className='d-block m-auto' src="/assets/imgs/healthicons_agriculture.svg" alt="" />
                                     <h3 className='my-3 text-center'>Get Started</h3>
 
                                     <label htmlFor="email">Email</label>

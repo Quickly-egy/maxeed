@@ -84,7 +84,7 @@ const Support = () => {
                                         </h6>
 
                                         <small>
-                                            Exporting crops
+                                            Fertilizer distribution
                                         </small>
 
 

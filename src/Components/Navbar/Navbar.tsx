@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
 
         <>
-            <nav className="navbar navbar-expand-lg bg-dark text-white px-4 py-3">
+            <nav className="navbar navbar-expand-lg bg-dark text-white px-5 py-3">
                 <div className="container-fluid">
                     <a className="navbar-brand text-white" href="#">
                         <img src="/assets/imgs/logo.svg" className='me-3' alt="" />
