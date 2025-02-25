@@ -76,7 +76,7 @@ const AboutUs = () => {
                             <div className="col-lg-6">
                                 <div>
                                     <h1>
-                                        Whey chose <br /> us
+                                        Why Choose <br /> Us
                                     </h1>
 
                                     <p>
