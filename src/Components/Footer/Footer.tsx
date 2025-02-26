@@ -23,9 +23,9 @@ const Footer = () => {
 
                         <div className=" col-md-5 col-lg-3">
                             <ul className='list-unstyled ps-5 ms-5'>
-                                <li> <Link className='text-decoration-none' to={''}> Contact Us </Link> </li>
-                                <li> <Link className='text-decoration-none' to={''}> About Us </Link> </li>
-                                <li> <Link className='text-decoration-none' to={''}> Our Products </Link> </li>
+                                <li> <Link className='text-decoration-none' to={'contact-us'}> Contact Us </Link> </li>
+                                <li> <Link className='text-decoration-none' to={'about-us'}> About Us </Link> </li>
+                                <li> <Link className='text-decoration-none' to={'products'}> Our Products </Link> </li>
                                 {/* <li><Link to={''}> Contact us </Link> </li> */}
                             </ul>
                         </div>

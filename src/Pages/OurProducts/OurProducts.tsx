@@ -275,7 +275,7 @@ const OurProducts = () => {
                                     <div className='position-relative '>
                                         <div
                                             style={{
-                                                height: '350px'
+                                                height: '300px'
                                             }}
                                             className='prodImgWrapper'
                                         >

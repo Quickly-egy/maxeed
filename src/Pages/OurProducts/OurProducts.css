@@ -8,8 +8,8 @@
 
 .ourProducts p {
     font-size: 18px;
-    margin: 23px 0;
-    line-height: 28px
+    margin: 10px 0 10px 0;
+    line-height: 28px;
 }
 
 .ourProducts .overlay {
@@ -83,7 +83,6 @@ ul li button {
 
     .ourProducts .overlay p {
         font-size: 12px;
-
     }
 
     .ourProducts .overlay a {
@@ -99,6 +98,12 @@ ul li button {
         font-size: 12px;
     }
 
+
+
+
+    .ourProducts .row {
+        padding: 0 15px;
+    }
 
 
 
