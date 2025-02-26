@@ -93,7 +93,12 @@
 
 
     .aboutUs .exporting {
-        padding: 40px 0;
+        padding: 40px 0 0 0;
+    }
+
+
+    .aboutUs .w-75 {
+        width: 100% !important;
     }
 
     .aboutUs div.imgWrapper img {
@@ -125,6 +130,22 @@
         padding: 20px;
         border-radius: 20px;
         margin: 15px 40px;
+    }
+
+    .aboutUs .whyChooseUs h1 {
+        font-size: 38px;
+    }
+
+
+    .aboutUs .whyChooseUs .iconWrapper {
+        align-items: start !important;
+    }
+
+    .aboutUs .whyChooseUs .iconWrapper img {
+        background-color: rgba(96, 213, 66, 1);
+        width: 50px;
+        height: 50px;
+        padding: 10px;
     }
 
 }

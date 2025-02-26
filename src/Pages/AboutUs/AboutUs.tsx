@@ -76,7 +76,7 @@ const AboutUs = () => {
                             <div className="col-lg-6">
                                 <div>
                                     <h1>
-                                        Why Choose <br /> Us
+                                        Why Choose Us
                                     </h1>
 
                                     <p>
@@ -94,7 +94,7 @@ const AboutUs = () => {
 
                                     {
                                         arrayOfArticles.map((item, idx) => {
-                                            return <article key={idx} className='iconWrapper d-flex align-items-center mb-5'>
+                                            return <article key={idx} className='iconWrapper d-flex align-items-center mb-4 mb-lg-5'>
                                                 <div>
                                                     <img className='me-3 rounded-4' src={item.imgUrl} alt="" />
 
@@ -118,7 +118,7 @@ const AboutUs = () => {
 
                         </div>
 
-                        <div className="row text-center my-5 py-5 footer">
+                        <div className="row text-center my-0 my-lg-5 py-5 footer">
                             <div className="col-lg-4">
                                 <div>
                                     <h1>10k</h1>
