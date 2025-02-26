@@ -36,6 +36,10 @@
         padding: 40px 0;
     }
 
+    .feedBack h1 {
+        font-size: 30px;
+    }
+
 
     .feedBack form {
         width: 95% !important;
@@ -44,6 +48,12 @@
 
     .feedBack .clientsWrapper {
         text-align: center;
+    }
+
+    .feedBack form {
+        background-color: rgba(34, 41, 56, 1);
+        padding: 35px 20px;
+        border-radius: 20px;
     }
 }
 
@@ -57,7 +67,11 @@
         justify-content: center;
         margin: 31px 0;
     }
+
+
 }
+
+
 
 @media (min-width: 769px) and (max-width: 992px) {
 

@@ -40,6 +40,11 @@
     }
 
 
+    .ourPrograms .col-lg-4 small {
+        width: fit-content;
+        font-size: 12px;
+    }
+
 
 }
 
@@ -53,5 +58,7 @@
         top: -20px;
 
     }
+
+
 
 }
