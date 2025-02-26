@@ -43,3 +43,15 @@ header.home_header h6 {
 
     }
 }
+
+
+
+
+@media (min-width: 577px) and (max-width: 769px) {
+    header.home_header {
+
+        height: 760px;
+
+    }
+
+}
