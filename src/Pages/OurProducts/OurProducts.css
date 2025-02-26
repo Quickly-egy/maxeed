@@ -110,3 +110,10 @@ ul li button {
     }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .ourProducts .btnGreen {
+        margin-bottom: 20px;
+    }
+}

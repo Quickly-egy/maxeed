@@ -41,6 +41,7 @@ const Certificates = () => {
 
                     <div className="row justify-content-md-center">
 
+
                         {
                             arrOfcertificates.map((item, idx) => {
                                 return <div key={idx} className="col-6 col-lg-2">
@@ -56,10 +57,12 @@ const Certificates = () => {
                                         >
                                             <img className='d-block mb-2' src={item.imgUrl} alt="" />
 
+
                                         </div>
                                         <h6 className='fw-bold'>
                                             {item.cerName}
                                         </h6>
+
 
                                         <small>
                                             {item.desc}

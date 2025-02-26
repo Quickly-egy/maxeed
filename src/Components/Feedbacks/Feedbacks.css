@@ -58,3 +58,14 @@
         margin: 31px 0;
     }
 }
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+
+    .feedBack .clientsWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 31px 0;
+    }
+
+}

@@ -169,3 +169,42 @@
     }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .aboutUs .exporting {
+        padding: 40px 0;
+    }
+
+    .aboutUs div.imgWrapper img {
+        width: 75% !important;
+        margin: 80px auto !important;
+        display: block;
+
+    }
+
+
+    .aboutUs .imgWrapper::after {
+        width: 70%;
+        height: 95%;
+        left: 25%;
+        top: -7%;
+
+    }
+
+    .aboutUs .imgWrapper::before {
+
+        top: 2%;
+        right: 11%;
+
+
+    }
+
+    .aboutUs .col-lg-4 div {
+        background-color: #f7f5f5;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 15px 40px;
+    }
+}

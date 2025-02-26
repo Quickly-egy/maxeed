@@ -73,4 +73,26 @@
         margin: 20px 0 45px 0;
     }
 
+    .support .col-lg-5 article {
+        margin: 20px 0;
+
+    }
+
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+
+    .support div.w-50 article {
+
+        margin: 10px 0 45px 0;
+    }
+
+
+    .support .col-lg-5 article {
+        margin: 20px 0;
+
+    }
 }

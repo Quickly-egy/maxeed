@@ -164,4 +164,12 @@
     .contactUs .map {
         height: 350px;
     }
+
+    .contactUs .map {
+        height: 361px;
+        top: 65px;
+        left: -66px;
+        width: 100%;
+
+    }
 }

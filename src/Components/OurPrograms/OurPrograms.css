@@ -38,4 +38,20 @@
     .ourPrograms .col-lg-4 {
         margin-bottom: 20px;
     }
+
+
+
+}
+
+
+
+@media (min-width: 577px) and (max-width: 769px) {
+
+
+    .ourPrograms .imgWrapper .transparentOverlay {
+
+        top: -20px;
+
+    }
+
 }

@@ -10,12 +10,16 @@
 }
 
 
+
+
 @media (max-width: 576px) {
 
     .certificates {
         padding: 40px 0;
 
     }
+
+
 
 
     .certificates .col-lg-2 {
@@ -26,6 +30,23 @@
 
 @media (min-width: 577px) and (max-width: 769px) {
 
+    .certificates .col-lg-2 {
+        width: 50% !important;
+        margin-bottom: 20px;
+
+    }
+
+    .certificates p {
+        margin: 25px 0 !important;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 992px) {
 
     .certificates .col-lg-2 {
         width: 50% !important;
@@ -33,9 +54,9 @@
 
     }
 
+    .certificates p {
+        margin: 25px 0 !important;
+    }
 }
-
-
-@media (min-width: 769px) and (max-width: 992px) {}
 
 @media (min-width: 993px) and (max-width: 1200px) {}
