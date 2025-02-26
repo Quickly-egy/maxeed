@@ -11,6 +11,7 @@ const OurProducts = () => {
     const arrOfProducts = [
         {
             id: 100,
+            details: 'product details',
             img: 'assets/imgs/vegs (1).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -19,6 +20,7 @@ const OurProducts = () => {
         },
         {
             id: 200,
+            details: 'product details',
             img: '/assets/imgs/vegs.jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -26,6 +28,7 @@ const OurProducts = () => {
         },
         {
             id: 300,
+            details: 'product details',
             img: '/assets/imgs/vegs (2).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -33,6 +36,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (3).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -40,6 +44,7 @@ const OurProducts = () => {
         },
         {
             id: 500,
+            details: 'product details',
             img: '/assets/imgs/vegs (4).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -47,6 +52,7 @@ const OurProducts = () => {
         },
         {
             id: 600,
+            details: 'product details',
             img: '/assets/imgs/vegs (5).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -54,6 +60,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (6).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -61,6 +68,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (7).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -68,6 +76,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (8).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -75,6 +84,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (9).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -82,6 +92,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (10).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -89,6 +100,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (11).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -96,6 +108,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (12).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -103,6 +116,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (13).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -110,6 +124,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (14).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -117,6 +132,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (15).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -124,6 +140,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (16).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -131,6 +148,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (17).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -138,6 +156,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (18).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -145,6 +164,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (19).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -152,6 +172,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (20).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -159,6 +180,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (21).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -166,6 +188,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (22).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -173,6 +196,7 @@ const OurProducts = () => {
         },
         {
             id: 400,
+            details: 'product details',
             img: '/assets/imgs/vegs (23).jpg',
             title: 'Fresh Vegitable and fruits',
             desc: 'Agricultural products',
@@ -284,16 +308,19 @@ const OurProducts = () => {
                                             <img src={`${prod.img}`} className='w-100 h-100' alt="" />
 
                                         </div>
+
                                         <div className='overlay px-2 d-flex flex-column justify-content-evenly'>
                                             <div className='text-white text-center'>
                                                 <h4 className='mb-0'>Fresh Vegitable and fruits</h4>
                                                 <p className='mt-0'>Agricultural products</p>
+                                                <small className='d-block mt-5'> {prod.details} </small>
                                             </div>
 
                                             {/* <small className='text-center d-block text-white'>
                                                 {prod.desc}
                                             </small> */}
 
+                                            {/* 
                                             <a className='text-white text-decoration-none d-flex align-items-center'
                                                 style={{
                                                     paddingLeft: '30px'
@@ -306,9 +333,10 @@ const OurProducts = () => {
                                             >
                                                 Read More
                                                 <i className="fa-solid fa-arrow-right ms-2"></i>
-                                            </a>
-                                        </div>
+                                            </a> */}
 
+                                        </div>
+                                        {/* 
                                         {openIndex === idx && (
                                             <div className="product-details">
                                                 <div className="details-content p-3">
@@ -319,7 +347,7 @@ const OurProducts = () => {
                                                     </button>
                                                 </div>
                                             </div>
-                                        )}
+                                        )} */}
 
                                     </div>
                                 </div>
