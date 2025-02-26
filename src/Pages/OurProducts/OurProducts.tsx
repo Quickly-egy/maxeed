@@ -225,7 +225,7 @@ const OurProducts = () => {
 
     }
 
-    const [openIndex, setOpenIndex] = useState(null);
+    // const [openIndex, setOpenIndex] = useState(null);
 
 
 
@@ -323,7 +323,7 @@ const OurProducts = () => {
                                             {/* 
                                             <a className='text-white text-decoration-none d-flex align-items-center'
                                                 style={{
-                                                    paddingLeft: '30px'
+                                                    paddingLeft: '30px' 
                                                 }}
                                                 href='#'
                                                 onClick={(e) => {
