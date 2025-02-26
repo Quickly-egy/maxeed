@@ -1,5 +1,5 @@
 header.home_header {
-    background-image: url('../../../public//assets//imgs//image.svg');
+    background-image: url('/assets//imgs//image.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
