@@ -1,0 +1,43 @@
+.container {
+    max-width: 1250px !important;
+}
+
+.fading-image {
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+
+.animate__animated {
+    animation-duration: 2s !important;
+}
+
+
+
+@media (max-width: 576px) {}
+
+@media (min-width: 577px) and (max-width: 769px) {
+
+    .container {
+        max-width: 700px !important;
+    }
+
+}
+
+
+
+
+
+@keyframes fadeAnimation {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    /* الصورة غير مرئية */
+    50% {
+        opacity: 1;
+    }
+
+    /* الصورة تظهر */
+}

@@ -7,7 +7,7 @@ const Footer = () => {
             <footer>
                 <div className="container">
                     <div className="row ">
-                        <div className="col-lg-4">
+                        <div className="col-md-5 col-lg-4">
                             <h1>MAXED</h1>
                             <p>Get started noew try our product</p>
 
@@ -21,7 +21,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className=" col-md-5 col-lg-3">
                             <ul className='list-unstyled ps-5 ms-5'>
                                 <li> <Link className='text-decoration-none' to={''}> Contact Us </Link> </li>
                                 <li> <Link className='text-decoration-none' to={''}> About Us </Link> </li>

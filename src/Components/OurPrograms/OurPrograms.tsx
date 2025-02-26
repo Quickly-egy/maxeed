@@ -33,9 +33,9 @@ const OurPrograms = () => {
                     </div>
 
 
-                    <div className="row mt-4">
+                    <div className="row mt-4 justify-content-center">
 
-                        <div className="col-lg-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className='imgWrapper position-relative'>
                                 <img src="/assets/imgs/Frame 25.svg" className='w-100' alt="" />
                                 <div className='transparentOverlay text-white ps-4 pt-5 pe-3'>
@@ -62,7 +62,7 @@ const OurPrograms = () => {
 
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className='imgWrapper position-relative'>
                                 <img src="/assets/imgs/Frame 18.svg" className='w-100' alt="" />
 
@@ -91,7 +91,7 @@ const OurPrograms = () => {
 
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-md-6 col-lg-4 mt-md-4 mt-lg-0">
                             <div className='imgWrapper position-relative'>
                                 <img src="/assets/imgs/Frame 19.svg" className='w-100' alt="" />
 

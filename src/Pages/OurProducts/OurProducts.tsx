@@ -253,7 +253,7 @@ const OurProducts = () => {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-lg-4">
+                        <div className=" col-lg-4">
                             <div className='d-flex flex-column align-items-start justify-content-between '>
                                 <h1>
                                     Our products
@@ -271,13 +271,13 @@ const OurProducts = () => {
                         {
 
                             filterdItems.map((prod, idx: any) => {
-                                return <div key={idx} className='col-lg-4 mb-4 '>
+                                return <div key={idx} className='col-6 col-lg-4 mb-4 '>
                                     <div className='position-relative '>
                                         <div
                                             style={{
                                                 height: '350px'
                                             }}
-
+                                            className='prodImgWrapper'
                                         >
 
 
@@ -312,9 +312,9 @@ const OurProducts = () => {
                                         {openIndex === idx && (
                                             <div className="product-details">
                                                 <div className="details-content p-3">
-                                                    <h5>{prod.title}</h5>
-                                                    <p>{prod.desc}</p>
-                                                    <button className="btn text-white text-decoration-underline" onClick={() => setOpenIndex(null)}>
+                                                    <h5 className='fw-bold'>{prod.title}</h5>
+                                                    <p >{prod.desc}</p>
+                                                    <button className="btn  text-decoration-underline" onClick={() => setOpenIndex(null)}>
                                                         Close
                                                     </button>
                                                 </div>

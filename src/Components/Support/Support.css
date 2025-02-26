@@ -63,3 +63,14 @@
         font-size: 19px;
     }
 }
+
+
+
+@media (min-width: 577px) and (max-width: 769px) {
+
+    .support div.w-50 article {
+
+        margin: 20px 0 45px 0;
+    }
+
+}

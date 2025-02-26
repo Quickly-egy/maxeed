@@ -99,6 +99,13 @@
 
 /* تحسينات على الشاشات الصغيرة */
 @media (max-width: 576px) {
+
+    .contactUs {
+
+        padding: 50px 20px;
+
+    }
+
     .contactUs .socialBox {
         flex-direction: column;
         align-items: center;
@@ -109,8 +116,9 @@
         top: 32px;
         position: absolute;
         padding: 20px;
-
-
+        width: 100%;
+        margin: auto;
+        left: 0;
     }
 
     .contactUs form {
@@ -126,17 +134,30 @@
         border-radius: 16px;
         overflow: hidden;
         margin-top: 20px;
+        height: 556px;
     }
+
+    .contactUs {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 769px) {
     .contactUs .map {
-        height: 300px;
+        height: 361px;
+        top: 65px;
+        left: -66px;
+        width: 100%;
+
     }
 
     .contactUs form {
         padding: 40px 20px;
     }
+
+
+
 }
 
 @media (min-width: 770px) and (max-width: 992px) {

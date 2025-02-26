@@ -9,9 +9,13 @@ import AboutUs from './Pages/AboutUs/AboutUs'
 import MasterLayout from './Layout/MasterLayout/MasterLayout'
 import NotFound from './Components/NotFound/NotFound'
 import ContactUs from './Pages/ContactUs/ContactUs'
+import { useEffect, useState } from 'react'
 
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
 
   const routes = createBrowserRouter([
     {
@@ -43,13 +47,43 @@ function App() {
 
   ])
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, [])
+
+
 
 
 
   return (
 
     <>
-      <RouterProvider router={routes} />
+
+      {
+        loading ? <div
+          style={{
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: 'green'
+          }}
+        >
+          <img src="/assets/imgs/logo.svg" className='fading-image ' width={150} height={150} alt="logo" />
+        </div>
+          :
+          <div className='animate__animated animate__fadeIn'>
+            <RouterProvider router={routes} />
+          </div>
+
+
+      }
+
+
+
+
     </>
 
 

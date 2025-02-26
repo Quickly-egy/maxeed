@@ -1,15 +1,17 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
+import 'animate.css';
+
 
 const Header = () => {
     return (
         <>
-            <header className='home_header'>
+            <header className='home_header '>
                 <div className="container">
 
                     <div className="row">
-                        <div className="col-lg-6">
-                            <h1>
+                        <div className="col-md-8 col-lg-6 animate__animated animate__fadeIn">
+                            <h1 className=''>
                                 Exporting agricultural
                                 crops is our expertise.
                             </h1>

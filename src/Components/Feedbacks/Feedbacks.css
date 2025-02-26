@@ -46,3 +46,15 @@
         text-align: center;
     }
 }
+
+
+
+@media (min-width: 577px) and (max-width: 769px) {
+
+
+    .feedBack .clientsWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 31px 0;
+    }
+}

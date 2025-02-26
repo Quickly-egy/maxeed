@@ -39,11 +39,11 @@ const Certificates = () => {
                     <h1 className='fw-bold'>Our Certificates</h1>
                     <p>At Maxed, we take pride in our commitment to excellence, quality, and compliance with international standards.</p>
 
-                    <div className="row">
+                    <div className="row justify-content-md-center">
 
                         {
                             arrOfcertificates.map((item, idx) => {
-                                return <div key={idx} className="col-lg-2">
+                                return <div key={idx} className="col-6 col-lg-2">
                                     <div className='p-3 bg-white rounded-2'>
                                         <div
                                             style={{

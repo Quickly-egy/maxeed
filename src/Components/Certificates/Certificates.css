@@ -24,7 +24,16 @@
     }
 }
 
-@media (min-width: 577px) and (max-width: 769px) {}
+@media (min-width: 577px) and (max-width: 769px) {
+
+
+    .certificates .col-lg-2 {
+        width: 50% !important;
+        margin-bottom: 20px;
+
+    }
+
+}
 
 
 @media (min-width: 769px) and (max-width: 992px) {}

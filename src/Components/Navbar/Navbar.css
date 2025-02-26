@@ -17,3 +17,11 @@
     color: rgba(148, 144, 144, 0.7);
 
 }
+
+
+
+@media (max-width: 576px) {
+    nav.navbar {
+        padding: 15px 0px !important;
+    }
+}
