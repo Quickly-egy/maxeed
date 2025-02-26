@@ -4,27 +4,27 @@ const Certificates = () => {
 
     const arrOfcertificates = [
         {
-            imgUrl: '../../../public/assets/imgs/cer (1).svg',
+            imgUrl: '/assets/imgs/cer (1).svg',
             cerName: 'ISO - 2018:22000',
             desc: 'ISO 22000:2018 is an international Food Safety Management System (FSMS) standard that ensures food safety at all stages of the food supply chain, from production to consumption. It integrates Hazard',
         },
         {
-            imgUrl: '../../../public/assets/imgs/cer (2).svg',
+            imgUrl: '/assets/imgs/cer (2).svg',
             cerName: 'E0S',
             desc: 'ISO 22000:2018 is an international Food Safety Management System (FSMS) standard that ensures food safety at all stages of the food supply chain, from production to consumption. It integrates Hazard',
         },
         {
-            imgUrl: '../../../public/assets/imgs/cer (3).svg',
+            imgUrl: '/assets/imgs/cer (3).svg',
             cerName: 'FDA',
             desc: 'ISO 22000:2018 is an international Food Safety Management System (FSMS) standard that ensures food safety at all stages of the food supply chain, from production to consumption. It integrates Hazard',
         },
         {
-            imgUrl: '../../../public/assets/imgs/cer (4).svg',
+            imgUrl: '/assets/imgs/cer (4).svg',
             cerName: 'ISO - 2018:22000',
             desc: 'ISO 22000:2018 is an international Food Safety Management System (FSMS) standard that ensures food safety at all stages of the food supply chain, from production to consumption. It integrates Hazard',
         },
         {
-            imgUrl: '../../../public/assets/imgs/cer (5).svg',
+            imgUrl: '/assets/imgs/cer (5).svg',
             cerName: 'BRGS',
             desc: 'ISO 22000:2018 is an international Food Safety Management System (FSMS) standard that ensures food safety at all stages of the food supply chain, from production to consumption. It integrates Hazard',
         },
