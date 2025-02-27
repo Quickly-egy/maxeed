@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import './Support.css'
 const Support = () => {
 
@@ -29,10 +30,19 @@ const Support = () => {
 
     ]
 
+    const { t, i18n } = useTranslation();
+
+
     return (
         <>
 
-            <section className='support' >
+            <section
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+                }}
+
+                className='support' >
                 <div className="container">
 
 
@@ -41,11 +51,11 @@ const Support = () => {
                         <div className="col-lg-6">
                             <div>
                                 <h1>
-                                    How we support our pratner all over the world
+                                    {t("SupportTitle")}
                                 </h1>
 
                                 <p className='my-4'>
-                                    Exporting has become a key model for delivering high-quality agricultural products to global markets, including grains, fresh produce, spices, and organic crops. We provide reliable supply chain solutions, ensuring premium agricultural exports meet international standards.
+                                    {t("SupportDesc")}
                                 </p>
 
                                 <div className='w-50 d-flex justify-content-between'>
@@ -59,11 +69,12 @@ const Support = () => {
                                         </span>
 
                                         <h6>
-                                            4.9 / 5 rating
+                                            4.9 / 5 {t("rating")}
                                         </h6>
 
                                         <small>
-                                            Exporting crops
+                                            {t("exporting_crops")}
+
                                         </small>
 
 
@@ -79,11 +90,11 @@ const Support = () => {
                                         </span>
 
                                         <h6>
-                                            4.9 / 5 rating
+                                            4.9 / 5 {t("rating")}
                                         </h6>
 
                                         <small>
-                                            Fertilizer distribution
+                                            {t("fertilizer_distribution")}
                                         </small>
 
 
@@ -101,14 +112,20 @@ const Support = () => {
                                         return <article key={idx} className='d-flex justify-content-between align-items-start'>
                                             <div
                                                 className='imgWrapper'
+
+                                                style={{ marginLeft: i18n.language === 'ar' ? '20px' : '0' }}
                                             >
                                                 <img src={`${item.img}`} alt="" />
 
                                             </div>
+
                                             <aside>
                                                 <h5> {item.name} </h5>
                                                 <p> {item.desc} </p>
                                             </aside>
+
+
+
                                         </article>
                                     })
                                 }

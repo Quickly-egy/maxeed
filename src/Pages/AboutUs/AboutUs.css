@@ -3,9 +3,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
+    padding-top: 80px;
 
 }
+
+.aboutUs {}
 
 .aboutUs header h1 {
     border-bottom: 2px solid white;
@@ -14,10 +17,10 @@
 
 
 .aboutUs .exporting {
-    padding: 70px 0;
+    padding: 135px 0 70px 0;
 }
 
-.aboutUs .imgWrapper::after {
+.aboutUs .imgWrapper .greenBrdrCirlce {
     content: '';
     width: 450px;
     height: 450px;
@@ -31,7 +34,7 @@
     border-radius: 50%;
 }
 
-.aboutUs .imgWrapper::before {
+.aboutUs .imgWrapper .greenFilledCirlce {
     content: '';
     width: 55px;
     height: 55px;
@@ -47,7 +50,7 @@
 
 .aboutUs .exporting h1,
 .aboutUs .exporting p {
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
     font-weight: 700;
 
 }
@@ -109,7 +112,7 @@
     }
 
 
-    .aboutUs .imgWrapper::after {
+    .aboutUs .imgWrapper .greenBrdrCirlce {
         width: 70%;
         height: 95%;
         left: 25%;
@@ -117,7 +120,7 @@
 
     }
 
-    .aboutUs .imgWrapper::before {
+    .aboutUs .imgWrapper .greenFilledCirlce {
 
         top: 2%;
         right: 4%;
@@ -166,7 +169,7 @@
     }
 
 
-    .aboutUs .imgWrapper::after {
+    .aboutUs .imgWrapper .greenBrdrCirlce {
         width: 70%;
         height: 95%;
         left: 25%;
@@ -174,7 +177,7 @@
 
     }
 
-    .aboutUs .imgWrapper::before {
+    .aboutUs .imgWrapper .greenFilledCirlce {
 
         top: 2%;
         right: 11%;
@@ -206,7 +209,7 @@
     }
 
 
-    .aboutUs .imgWrapper::after {
+    .aboutUs .imgWrapper .greenBrdrCirlce {
         width: 70%;
         height: 95%;
         left: 25%;
@@ -214,7 +217,7 @@
 
     }
 
-    .aboutUs .imgWrapper::before {
+    .aboutUs .imgWrapper .greenFilledCirlce {
 
         top: 2%;
         right: 11%;
@@ -244,7 +247,7 @@
     }
 
 
-    .aboutUs .imgWrapper::after {
+    .aboutUs .imgWrapper .greenBrdrCirlce {
         width: 70%;
         height: 95%;
         left: 25%;
@@ -252,7 +255,7 @@
 
     }
 
-    .aboutUs .imgWrapper::before {
+    .aboutUs .imgWrapper .greenFilledCirlce {
 
         top: 2%;
         right: 7%;
@@ -266,4 +269,16 @@
         border-radius: 20px;
         margin: 15px 40px;
     }
+}
+
+@media (min-width: 1201px) {
+
+    .customizedFilledCirlceEnglish {
+        right: 5.8% !important;
+    }
+
+    .customizedFilledCirlceArabic {
+        left: 1% !important;
+    }
+
 }

@@ -1,10 +1,16 @@
-.ourProducts {
-    padding: 70px 0;
+ul.filter {
+    margin-top: 80px !important;
 }
+
+.ourProducts {
+    padding: 70px 0 70px 0;
+}
+
 
 .ourProducts .btnGreen {
     background-color: rgba(96, 213, 66, 1);
 }
+
 
 .ourProducts p {
     font-size: 18px;
@@ -73,7 +79,7 @@ ul li button {
     }
 
     .ourProducts .prodImgWrapper {
-        height: 185px !important;
+        height: 150px !important;
     }
 
     .ourProducts .overlay h4 {

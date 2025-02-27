@@ -10,6 +10,9 @@ import MasterLayout from './Layout/MasterLayout/MasterLayout'
 import NotFound from './Components/NotFound/NotFound'
 import ContactUs from './Pages/ContactUs/ContactUs'
 import { useEffect, useState } from 'react'
+import cookies from 'js-cookie'
+import i18n from './i18n'
+
 
 
 function App() {
@@ -53,8 +56,11 @@ function App() {
     }, 1000);
   }, [])
 
+  const lang = cookies.get("i18next") || "en"
 
-
+  useEffect(() => {
+    window.document.dir = i18n.dir()
+  }, [lang])
 
 
   return (

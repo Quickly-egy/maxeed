@@ -1,9 +1,20 @@
+import { useTranslation } from 'react-i18next';
 import './OurPrograms.css'
 
 const OurPrograms = () => {
+
+    const { t, i18n } = useTranslation();
+
+
     return (
         <>
-            <section className='ourPrograms'>
+            <section
+
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+                }}
+                className='ourPrograms'>
                 <div className="container">
 
                     <div
@@ -17,9 +28,10 @@ const OurPrograms = () => {
                                 padding: '9px 32px 9px 70px'
 
                             }}
+
                         >
                             <img className='position position-absolute start-0 top-0 bottom-0' src="/assets/imgs/Frame 7.svg" alt="" />
-                            Our Programs
+                            {t("ourPrograms")}
                         </span>
                     </div>
 
@@ -28,7 +40,7 @@ const OurPrograms = () => {
                             Some of the services provided by our company
                         </h1>
                         <h6>
-                            Comprehensive agricultural export solutions, including sourcing, quality control, packaging, logistics, and global distribution.
+                            {t("ourProgramsDesc")}
                         </h6>
                     </div>
 
@@ -49,13 +61,13 @@ const OurPrograms = () => {
                                     </h6>
 
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Grains & Cereals: Premium wheat, rice, and corn.
+                                        {t("card_one_text1")}
                                     </small>
                                     <small className='bg-white d-block my-2 text-dark p-1 rounded-4 '>
-                                        Fresh Produce: High-quality fruits.
+                                        {t("card_one_text2")}
                                     </small>
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Legumes & Spices: Finest pulses and spices.
+                                        {t("card_one_text3")}
                                     </small>
 
                                 </div>
@@ -77,13 +89,13 @@ const OurPrograms = () => {
                                     </h6>
 
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Fertilizers: Enriching soil.
+                                        {t("card_two_text1")}
                                     </small>
                                     <small className='bg-white d-block my-2 text-dark p-1 rounded-4 '>
-                                        Pesticides: Protecting crops.
+                                        {t("card_two_text2")}
                                     </small>
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Sustainability: Safe farming.
+                                        {t("card_two_text3")}
                                     </small>
 
                                 </div>
@@ -106,13 +118,13 @@ const OurPrograms = () => {
                                     </h6>
 
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Seeds Production: High-quality, high-yield seeds.
+                                        {t("card_three_text1")}
                                     </small>
                                     <small className='bg-white d-block my-2 text-dark p-1 rounded-4 '>
-                                        Hybrid Seeds: Enhanced growth and resistance.
+                                        {t("card_three_text2")}
                                     </small>
                                     <small className='bg-white d-block text-dark p-1 rounded-4 '>
-                                        Organic Seeds: Natural and chemical-free.
+                                        {t("card_three_text3")}
                                     </small>
 
                                 </div>

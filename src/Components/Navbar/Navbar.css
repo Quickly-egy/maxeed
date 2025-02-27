@@ -1,27 +1,41 @@
 .nav-link {
     padding: 7px 20px !important;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
 }
+
+nav {
+    box-shadow: 0px 0px 15px rgb(241, 241, 241);
+}
+
 
 .nav-link.active-link {
     /* background-color: rgba(229, 57, 70, 1); */
     /* Change this to any color */
     border-radius: 5px;
-    color: white !important;
+    color: black !important;
     font-weight: 800;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-    color: rgba(148, 144, 144, 0.7);
+    color: rgba(241, 237, 237, 0.7);
 
 }
 
 
+.dropdown-menu {
+    min-width: fit-content !important;
+
+}
+
+nav .maxLogo {
+    width: 140px;
+    height: 55px;
+}
+
 
 @media (max-width: 576px) {
     nav.navbar {
-        padding: 15px 0px !important;
+        padding: 5px 0px !important;
     }
 }

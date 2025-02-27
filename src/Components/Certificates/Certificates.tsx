@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import './Certificates.css'
 
 const Certificates = () => {
+
+    const { t, i18n } = useTranslation();
+
 
     const arrOfcertificates = [
         {
@@ -33,11 +37,20 @@ const Certificates = () => {
     return (
         <>
 
-            <section className='certificates'>
+            <section
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+                }}
+                className='certificates'>
                 <div className="container">
 
-                    <h1 className='fw-bold'>Our Certificates</h1>
-                    <p>At Maxed, we take pride in our commitment to excellence, quality, and compliance with international standards.</p>
+                    <h1 className='fw-bold'>
+                        {t("certificate")}
+                    </h1>
+                    <p>
+                        {t("certificate_desc")}
+                    </p>
 
                     <div className="row justify-content-md-center">
 

@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './OurProducts.css'
+import { useTranslation } from 'react-i18next'
 
 const OurProducts = () => {
 
 
 
+    const [pdfFile, setPdfFile] = useState(null);
 
 
 
@@ -54,9 +56,15 @@ const OurProducts = () => {
             id: 600,
             details: 'product details',
             img: '/assets/imgs/vegs (5).jpg',
-            title: 'Fresh Vegitable and fruits',
+            title: 'Green Peas',
+            color: 'Natural Green',
+            size: '7 : 11 cm',
+            borken_rate: '2% No black dots and no impurities',
+            packing: '4: 5 kg / carton Or according to customer needs',
             desc: 'Agricultural products',
+            shipping: 'Container 40 feet 22 ton',
             type: 'fresh',
+
         },
         {
             id: 700,
@@ -114,14 +122,7 @@ const OurProducts = () => {
             desc: 'Agricultural products',
             type: 'frozen',
         },
-        {
-            id: 1400,
-            details: 'product details',
-            img: '/assets/imgs/vegs (13).jpg',
-            title: 'Fresh Vegitable and fruits',
-            desc: 'Agricultural products',
-            type: 'frozen',
-        },
+
         {
             id: 1500,
             details: 'product details',
@@ -222,17 +223,40 @@ const OurProducts = () => {
         setFilteredItems(filters)
 
         setIsActive(app)
-
     }
 
+
+    const pdfUrl = "/assets/imgs/Fresh fruits & Vegetables maxeed.pdf";
+
     // const [openIndex, setOpenIndex] = useState(null);
+    const { t, i18n } = useTranslation();
+
+
+    // const handleFileChange = (event: any) => {
+    //     const file = event.target.files[0];
+    //     if (file && file.type === "application/pdf") {
+    //         const fileURL = URL.createObjectURL(file);
+    //         setPdfFile({ file, fileURL });
+    //     } else {
+    //         alert("Please upload a valid PDF file.");
+    //         setPdfFile(null);
+    //     }
+    // };
+
+
 
 
 
     return (
         <>
 
-            <ul className='m-0 ps-5 py-3 border-bottom d-flex  list-unstyled'>
+            <ul
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif',
+
+                }}
+                className='m-0 ps-5 py-3 border-bottom d-flex  list-unstyled  filter  '>
 
                 <li className='me-4' >
 
@@ -265,14 +289,35 @@ const OurProducts = () => {
                 <li className='me-4' >
                     <button
                         className={isActive === 'seeds' ? 'active' : ''}
-                        onClick={() => { handelFilteredButtonClick('seeds') }} >
-                        Seeds
+                    >
+                        <div className="dropdown">
+                            <a className="text-dark text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Seeds
+                            </a>
+
+                            <ul className="dropdown-menu">
+                                <li
+                                    onClick={() => { handelFilteredButtonClick('seeds') }}
+                                ><a className="dropdown-item" href="#">beans</a></li>
+                                <li
+                                    onClick={() => { handelFilteredButtonClick('seeds') }}
+                                ><a className="dropdown-item" href="#">rice</a></li>
+                                <li
+                                    onClick={() => { handelFilteredButtonClick('seeds') }}
+                                ><a className="dropdown-item" href="#">corn</a></li>
+                            </ul>
+                        </div>
 
                     </button>
                 </li>
             </ul>
 
-            <section className='ourProducts'>
+            <section
+                style={{
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif',
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                }}
+                className='ourProducts'>
 
                 <div className="container">
                     <div className="row">
@@ -280,14 +325,25 @@ const OurProducts = () => {
                         <div className=" col-lg-4">
                             <div className='d-flex flex-column align-items-start justify-content-between '>
                                 <h1>
-                                    Our products
+                                    {t("productsTitle")}
                                 </h1>
                                 <p >
-                                    We offer a diverse range of premium agricultural products, including fresh fruits, vegetables, grains, spices, and legumes, all meeting international quality standards."
-                                    Let me know if you need further refinements!
+                                    {t("productsDesc")}
                                 </p>
-                                <button className='btn btnGreen text-white px-5 py-3' >
-                                    Get started
+                                <button className='btn btnGreen text-white px-5 mt-4 py-3' >
+                                    <div className="">
+
+
+                                        {/* عرض الـ PDF داخل الصفحة */}
+                                        {/* <iframe src={pdfUrl}></iframe> */}
+
+                                        {/* زر تحميل الملف */}
+                                        <div className="">
+                                            <a href={pdfUrl} download className="d-block fw-bold text-white text-black text-decoration-none">
+                                                Download Catalogue
+                                            </a>
+                                        </div>
+                                    </div>
                                 </button>
                             </div>
                         </div>
@@ -311,8 +367,13 @@ const OurProducts = () => {
 
                                         <div className='overlay px-2 d-flex flex-column justify-content-evenly'>
                                             <div className='text-white text-center'>
-                                                <h4 className='mb-0'>Fresh Vegitable and fruits</h4>
-                                                <p className='mt-0'>Agricultural products</p>
+                                                <h4 className='mb-0'>
+                                                    {t("cardTitle")}
+
+                                                </h4>
+                                                <p className='mt-0'>
+                                                    {t("cardSubTitle")}
+                                                </p>
                                                 <small className='d-block mt-5'> {prod.details} </small>
                                             </div>
 

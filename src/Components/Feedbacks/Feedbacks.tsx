@@ -1,22 +1,33 @@
+import { useTranslation } from 'react-i18next';
 import './Feedbacks.css'
 
 const Feedbacks = () => {
+
+
+    const { t, i18n } = useTranslation();
+
+
     return (
         <>
 
-            <section className='feedBack'>
+            <section
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+                }}
+                className='feedBack'>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
                             <div>
                                 <h1 className='text-white'>
-                                    People are Saying About Maxed
+                                    {t("feedback_title")}
                                 </h1>
 
                                 <p style={{
                                     color: '#b3b2b2'
                                 }}>
-                                    "Premium agricultural products with reliable service, timely global delivery, and guaranteed freshness meeting international standards."
+                                    {t("feedback_desc1")}
                                 </p>
 
                                 <img className='my-4' src="/assets/imgs/Group 212.svg" alt="" />
@@ -24,7 +35,7 @@ const Feedbacks = () => {
                                 <p style={{
                                     color: '#b3b2b2'
                                 }}>
-                                    "Premium agricultural products with reliable service, timely global delivery, and guaranteed freshness meeting international standards."
+                                    {t("feedback_desc2")}
                                 </p>
 
 
@@ -45,16 +56,23 @@ const Feedbacks = () => {
                                 <form className='text-white w-75 m-auto'>
 
                                     <img className='d-block m-auto' src="/assets/imgs/healthicons_agriculture.svg" alt="" />
-                                    <h3 className='my-3 text-center'>Get Started</h3>
+                                    <h3 className='my-3 text-center'>
+                                        {t("getStarted")}
 
-                                    <label htmlFor="email">Email</label>
+                                    </h3>
+
+                                    <label htmlFor="email">
+                                        {t("email")}
+                                    </label>
                                     <input type="email" name="" id="email"
                                         className='mb-4 form-control'
                                         placeholder='Enter your email'
 
                                     />
 
-                                    <label htmlFor="message">Message</label>
+                                    <label htmlFor="message">
+                                        {t("message")}
+                                    </label>
                                     {/* <textarea type="text"
                                         className='form-control'
                                     /> */}
@@ -66,7 +84,7 @@ const Feedbacks = () => {
                                     </textarea>
 
                                     <button className='btn btn-primary w-100 mt-2'>
-                                        Request Demo
+                                        Send
                                     </button>
 
 

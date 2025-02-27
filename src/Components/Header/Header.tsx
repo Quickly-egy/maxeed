@@ -1,23 +1,36 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
 import 'animate.css';
+import { useTranslation } from 'react-i18next';
 
 
 const Header = () => {
+
+    const { t, i18n } = useTranslation();
+
+
     return (
         <>
-            <header className='home_header '>
+            <header
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+
+                }}
+                className='home_header '>
                 <div className="container">
 
                     <div className="row">
                         <div className="col-md-8 col-lg-6 animate__animated animate__fadeIn">
                             <h1 className=''>
-                                Exporting agricultural
-                                crops is our expertise.
+                                {t("HomeHeaderTile")}
                             </h1>
 
+
                             <h6 className='my-4 fs-4 fw-light'>
-                                We have exported 100+ agricultural products to markets worldwide. Supplying premium crops and agricultural solutions to businesses globally. An award-winning company with 17+ years of experience in the industry.
+                                {t("HomeHeaderDesc")}
+
                             </h6>
 
                             <div className='d-flex align-items-center'>
@@ -29,7 +42,7 @@ const Header = () => {
                                     <Link
                                         className='text-white text-decoration-none'
                                         to={'/products'}>
-                                        See Our Products
+                                        {t("HomeHeaderBtn")}
                                     </Link>
 
                                 </button>
