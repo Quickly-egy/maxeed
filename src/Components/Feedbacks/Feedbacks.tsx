@@ -14,7 +14,9 @@ const Feedbacks = () => {
                 style={{
                     direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
                     fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+
                 }}
+
                 className='feedBack'>
                 <div className="container">
                     <div className="row">

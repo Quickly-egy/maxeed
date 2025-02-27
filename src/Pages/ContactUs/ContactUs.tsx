@@ -1,9 +1,21 @@
+import { useTranslation } from 'react-i18next';
 import './ContactUs.css'
 
 const ContactUs = () => {
+
+
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <section
+
+                style={{
+                    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+
+                    fontFamily: i18n.language === 'ar' ? '"Cairo", sans-serif' : '"Poppins", serif'
+
+                }}
                 className='contactUs d-flex'>
                 <div className="container">
                     <div className="row justify-content-center">
@@ -11,8 +23,15 @@ const ContactUs = () => {
                         <div className="col-lg-9">
                             <div className='w-75'>
                                 <form>
-                                    <h1>Get in <span> Touch </span> </h1>
-                                    <p>Have questions or need more details? Get in touch with us for inquiries, partnerships, or orders. Our team is ready to assist you with premium agricultural exports and reliable service.</p>
+                                    <h1>
+
+                                        {t("contactUsTitle")}
+
+                                    </h1>
+                                    <p>
+
+                                        {t("contactUsDesc")}
+                                    </p>
 
                                     <input type="text"
                                         placeholder='Name'
@@ -74,7 +93,13 @@ const ContactUs = () => {
 
                         className='w-100' alt="" />
 
-                    <div className='map'>
+                    <div
+                        style={{
+                            right: i18n.language === 'ar' ? ' -148px' : 'unset',
+
+
+                        }}
+                        className='map'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.9112305614312!2d31.3937486!3d30.137058699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458168acd5e4807%3A0xd71d6c300d29609d!2z2KzZiNiy2YrZgSDYqtmK2KrZiNiMINmC2LPZhSDYp9mE2YbYstmH2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e1!3m2!1sar!2seg!4v1740480329109!5m2!1sar!2seg" width="600" height="450" style={{ border: '0' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </aside>
