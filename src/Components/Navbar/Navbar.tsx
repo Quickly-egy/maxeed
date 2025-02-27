@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <>
             <nav
-                className={`navbar navbar-expand-lg fixed-top ${isSticky ? "bg-white shadow-sm" : "bg-white"} transition`}
+                className={`navbar navbar-expand-lg fixed-top px-lg-5 ${isSticky ? "bg-white shadow-sm" : "bg-white"} transition`}
                 style={{
                     direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
 
