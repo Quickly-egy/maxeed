@@ -39,7 +39,7 @@ const Navbar = () => {
             >
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src="../../../public/assets/imgs/maxeedLogo.png" className='me-3 maxLogo' alt="" />
+                        <img src="/assets/imgs/maxeedLogo.png" className='me-3 maxLogo' alt="" />
 
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
