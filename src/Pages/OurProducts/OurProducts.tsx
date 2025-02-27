@@ -4,12 +4,6 @@ import { useTranslation } from 'react-i18next'
 
 const OurProducts = () => {
 
-
-
-    const [pdfFile, setPdfFile] = useState(null);
-
-
-
     const arrOfProducts = [
         {
             id: 100,
