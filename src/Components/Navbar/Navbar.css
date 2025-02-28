@@ -3,6 +3,8 @@
     text-decoration: none;
 }
 
+
+
 nav {
     box-shadow: 0px 0px 15px rgb(241, 241, 241);
 }
@@ -33,6 +35,11 @@ nav .maxLogo {
     height: 55px;
 }
 
+
+.dropdown-toggle::after {
+    margin: 0 5px;
+
+}
 
 @media (max-width: 576px) {
     nav.navbar {
