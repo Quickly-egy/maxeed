@@ -1,5 +1,5 @@
 .ourPrograms {
-    padding: 70px 0;
+    padding: 135px 0 70px 0;
 }
 
 .ourPrograms h1 {
@@ -31,7 +31,7 @@
 @media (max-width: 576px) {
 
     .ourPrograms {
-        padding: 70px 0;
+         padding: 135px 0 70px 0;;
     }
 
 

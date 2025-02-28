@@ -40,7 +40,7 @@ const AboutUs = () => {
                 }}
                 className='aboutUs'>
                 <header className='d-flex justify-content-center align-items-center'>
-                    <h1 className='text-white'>About Us</h1>
+                    <h1 className='text-white'> {t("aboutUs")} </h1>
                 </header>
 
                 <section className='exporting'>
