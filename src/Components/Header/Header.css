@@ -1,16 +1,3 @@
-header.home_header {
-    background-image: url('/assets/imgs/image.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.281);
-    background-blend-mode: overlay;
-    color: white;
-    padding: 133px 0;
-    height: 650px;
-    background-attachment: fixed;
-
-}
 
 
 
