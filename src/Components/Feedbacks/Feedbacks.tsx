@@ -41,13 +41,7 @@ const Feedbacks = () => {
                                 </p>
 
 
-                                <div className='mt-5 clientsWrapper'>
-
-                                    <img width={50} height={50} src="/assets/imgs/Ellipse 54.svg" alt="" />
-                                    <img width={50} height={50} src="/assets/imgs/Ellipse 55.svg" alt="" />
-                                    <img width={50} height={50} src="/assets/imgs/Ellipse 57.svg" alt="" />
-                                    <img width={50} height={50} src="/assets/imgs/Ellipse 56.svg" alt="" />
-                                </div>
+                               
 
 
                             </div>

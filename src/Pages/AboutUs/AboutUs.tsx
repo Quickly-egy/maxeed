@@ -96,7 +96,7 @@ const AboutUs = () => {
                                             className='btn'>
 
 
-                                            Our Products
+{t("btn")}
 
                                             {
                                                 i18n.language === "ar" ?
