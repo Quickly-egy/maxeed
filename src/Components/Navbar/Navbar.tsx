@@ -59,17 +59,17 @@ const Navbar = () => {
                                     className={({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")}
                                     aria-current="page" to="/products"> {t("products")} </NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    className={({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")}
-                                    aria-current="page" to={'/contact-us'}> {t("contactUs")} </NavLink>
-                            </li>
+                           
                             <li className="nav-item">
                                 <NavLink
                                     className={({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")}
                                     aria-current="page" to={'/about-us'}> {t("aboutUs")}   </NavLink>
                             </li>
-
+                            <li className="nav-item">
+                                <NavLink
+                                    className={({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")}
+                                    aria-current="page" to={'/contact-us'}> {t("contactUs")} </NavLink>
+                            </li>
                         </ul>
 
                         <a href="#"
